@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Blog</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Travel</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="mountains.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Adventure</h2>
+        <h3>Is All We Need</h3>
+        <p>
+          The future is unpredictable & the meaning of adventure revolves around
+          it. "Adventure is all we need , travelling is all it takes & memories
+          are all we want."
+        </p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="fblogo.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="insta.png" alt="" /> </a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a herf="#">Home</a></li>
+        <li><a herf="#">News</a></li>
+        <li><a herf="#">Destination</a></li>
+        <li><a herf="#">Blog</a></li>
+        <li><a herf="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toogle");
+      const schowcase = document.querySelector(".showcase");
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
